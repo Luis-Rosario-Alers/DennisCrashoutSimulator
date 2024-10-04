@@ -1,0 +1,3 @@
+- name: Setup Godot Action
+  uses: chickensoft-games/setup-godot@v2.1.1
+            

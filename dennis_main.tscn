@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdnafelvcvxw0"]
+
+[ext_resource type="Texture2D" uid="uid://drb4kaluvn574" path="res://Dennis.png" id="1_l0w08"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_ue3k7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqg55"]
+size = Vector2(86, 159)
+
+[node name="Dennis" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(578.875, 288.904)
+script = ExtResource("1_ue3k7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-8.87463, -8.40363)
+shape = SubResource("RectangleShape2D_gqg55")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-0.874634, 0.0963745)
+scale = Vector2(0.199341, 0.199341)
+texture = ExtResource("1_l0w08")

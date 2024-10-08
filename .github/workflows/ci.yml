@@ -30,6 +30,7 @@ jobs:
 
       - name: 📦 Restore Dependencies
         run: dotnet restore
+        working-directory: C:\Users\luisr\Documents\denniscrashoutsimulator
 
       - uses: chickensoft-games/setup-godot@v1
         name: 🤖 Setup Godot
